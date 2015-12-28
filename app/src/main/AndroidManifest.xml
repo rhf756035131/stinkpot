@@ -29,6 +29,15 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
+            android:name=".Closestool"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Closestool_times_info"
+            android:label="@string/Closestool_info"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
             android:name=".Select_mode"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
