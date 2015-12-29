@@ -1,38 +1,26 @@
 package com.example.renhaifeng.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.TextView;
+
+
+import java.util.List;
 
 /**
- * Created by rahul on 15-12-28.
+ * Created by rahul on 15-12-29.
  */
-public class Closestool_times_info  extends AppCompatActivity {
+public class Check_nomal_Result extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.closesetool_times_info);
+        setContentView(R.layout.nomal_result);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        LinearLayout layout=(LinearLayout)findViewById(R.id.Normal_Result);
-        layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(Closestool_times_info.this,Check_nomal_Result.class);
-                startActivity(intent);
-            }
-        });
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

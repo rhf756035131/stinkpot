@@ -11,4 +11,6 @@
     <string name="spinnerTaskResultCountTitle">Task result count</string>
     <string name="btnConfirmTitle">确定</string>
     <string name="Closestool_info">检测结果</string>
+    <string name="Closestool_timslist">统计列表</string>
+    <string name="Closestool_check_nomal_info">常规检测结果</string>
 </resources>
