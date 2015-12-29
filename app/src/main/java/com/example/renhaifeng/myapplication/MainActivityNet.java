@@ -40,11 +40,11 @@ public class MainActivityNet extends AppCompatActivity {
     }
     public void initListAllPersons(){
         Devices = new ArrayList<Device>();
-        Devices.add(new Device(R.drawable.socket, "烤箱插座", "连接"));
-        Devices.add(new Device(R.drawable.socket, "取暖器插座", "连接"));
-        Devices.add(new Device(R.drawable.socket, "电热毯插座", "连接"));
-        Devices.add(new Device(R.drawable.socket, "客厅总插座", "连接"));
-        Devices.add(new Device(R.drawable.socket, "热水器插座", "连接"));
+        Devices.add(new Device(R.drawable.socket, "烤箱插座", "连接",Device.DEVICE_SOCKET));
+        Devices.add(new Device(R.drawable.socket, "取暖器插座", "连接",Device.DEVICE_SOCKET));
+        Devices.add(new Device(R.drawable.socket, "电热毯插座", "连接",Device.DEVICE_SOCKET));
+        Devices.add(new Device(R.drawable.closestool, "马桶", "连接",Device.DEVICE_CLOSESTOOL));
+        Devices.add(new Device(R.drawable.socket, "热水器插座", "连接",Device.DEVICE_SOCKET));
     }
     public void showByMyBaseAdapter(){
         adapter = new MyBaseAdapter(this, Devices);
@@ -66,7 +66,7 @@ public class MainActivityNet extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
 //                        new StatusTask(MainActivity.this,"Query Status").execute();
-                        Devices.add(new Device(R.drawable.socket, "智能插座", "断开"));
+                        Devices.add(new Device(R.drawable.socket, "智能插座", "断开",Device.DEVICE_CLOSESTOOL));
                         listDevice.setAdapter(adapter);
                     }
                 }).setNegativeButton("取消", null).show();

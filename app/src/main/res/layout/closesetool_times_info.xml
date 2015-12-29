@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="setContentView"
-        android:id="@+id/Normal_Result">
+        android:id="@+id/Normal_Result"
+        android:touchscreenBlocksFocus="false">
 
         <TextView
             android:layout_width="0dp"

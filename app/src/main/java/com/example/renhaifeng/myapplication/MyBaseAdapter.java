@@ -1,6 +1,7 @@
 package com.example.renhaifeng.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,9 +81,15 @@ public class MyBaseAdapter extends BaseAdapter {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,
-                        "[convertView.setOnClickListener]点击了"+Device.name,
-                        Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent();
+                if(Device.devicetype==Device.DEVICE_SOCKET)
+                {
+                    intent.setClass(context,MainActivity.class);
+                }else if (Device.devicetype==Device.DEVICE_CLOSESTOOL)
+                {
+                    intent.setClass(context,Closestool.class);
+                }
+                context.startActivity(intent);
             }
 
         });
