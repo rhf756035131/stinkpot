@@ -1,5 +1,6 @@
 package com.example.renhaifeng.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -45,7 +46,7 @@ public class Closestool extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.closestool_menu, menu);
         return true;
     }
 
@@ -54,8 +55,10 @@ public class Closestool extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_done) {
-            finish();
+        if (id == R.id.Closestool_action_settings) {
+            Intent intent=new Intent();
+            intent.setClass(Closestool.this,Closestool_PA_Setting.class);
+            startActivity(intent);
             return true;
         }
         if(id== android.R.id.home)

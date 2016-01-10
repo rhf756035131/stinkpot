@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent();
-                intent.setClass(MainActivity.this,Setting.class);
+                intent.setClass(MainActivity.this,Socket_PA_Setting.class);
                 startActivity(intent);
             }
         });

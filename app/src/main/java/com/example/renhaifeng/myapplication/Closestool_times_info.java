@@ -37,7 +37,7 @@ public class Closestool_times_info  extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.closestool_times_info_menu, menu);
         return true;
     }
 
@@ -46,7 +46,7 @@ public class Closestool_times_info  extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_done) {
+        if (id == R.id.Closestool_times_info_back) {
             finish();
             return true;
         }

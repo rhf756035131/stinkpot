@@ -5,12 +5,18 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_add">添加</string>
     <string name="app_version">v0.1</string>
-    <string name="tvApSsidTitle">SSID: </string>
-    <string name="tvPasswordTitle">Password: </string>
-    <string name="switchIsSsidHiddenTitle">SSID is Hidden</string>
-    <string name="spinnerTaskResultCountTitle">Task result count</string>
+    <string name="tvApSsidTitle">设备: </string>
+    <string name="tvnewApSsidTitle">重命名设备: </string>
+    <string name="tvoldPasswordTitle">输入老密码: </string>
+    <string name="tvnewPasswordTitle">输入新密码: </string>
+    <string name="tvnewaginPasswordTitle">确认新密码: </string>
+    <string name="switchIsSsidHiddenTitle">隐藏此设备</string>
+    <string name="spinnerTaskResultCountTitle">连接设备次数</string>
     <string name="btnConfirmTitle">确定</string>
     <string name="Closestool_info">检测结果</string>
     <string name="Closestool_timslist">统计列表</string>
     <string name="Closestool_check_nomal_info">常规检测结果</string>
+    <string name="Closestool_action_settings">设置</string>
+    <string name="Closestool_check_resulat">返回</string>
+    <string name="Closestool_times_info_back">返回</string>
 </resources>

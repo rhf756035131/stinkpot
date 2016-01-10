@@ -20,7 +20,7 @@ public class Select_mode extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent();
-                intent.setClass(Select_mode.this,Closestool.class);
+                intent.setClass(Select_mode.this,MainActivity.class);
                 startActivity(intent);
                 finish();
             }
